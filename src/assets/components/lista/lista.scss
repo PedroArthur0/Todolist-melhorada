@@ -1,0 +1,91 @@
+@use "../../../sass/mixin";
+@use "../../../sass/variables";
+
+.lista_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  width: min(100%, 685px);
+
+  tr {
+    display: grid;
+    min-width: 600px;
+    grid-template-columns: 40% 20% 30% auto;
+  }
+
+  th,
+  td {
+    padding: 0 10px 0 10px;
+  }
+
+  th {
+    @include mixin.bodyL;
+    color: inherit;
+    border-bottom: 5px solid #d9d9d9;
+    border-collapse: collapse;
+    padding-bottom: 40px;
+    margin-bottom: 18px;
+  }
+  td {
+    margin-top: 15px;
+    @include mixin.bodyS;
+    color: inherit;
+  }
+
+  .col1 {
+    display: inline-block;
+    text-align: left;
+  }
+  .col2 {
+    text-align: center;
+  }
+  .col3 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  .col4 {
+    display: inline-block;
+    text-align: right;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    button {
+      display: inline;
+      width: 50%;
+    }
+  }
+
+  button {
+    color: inherit;  
+  }
+
+  svg {
+    color: inherit;
+  }
+
+  svg:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked ~ svg {
+    color: variables.$secondary-color;
+
+    &path {
+      fill: currentColor;
+    }
+  }
+}
+
+
+.light {
+  color: variables.$primary-color;
+}
+
+.dark {
+  color: variables.$pure-white;
+}
