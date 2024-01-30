@@ -5,7 +5,6 @@
 		<a href="https://www.linkedin.com/in/pedro-arthur-amaral-0a2996232/">
 		</a>
 		<a href="https://https://github.com/PedroArthur0">
-		  <img alt="last commit" src="https://img.shields.io/github/last-commit/PedroArthur0/PedroArthur0">
 		</a>
 	</p>
 </div>
